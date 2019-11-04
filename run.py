@@ -105,7 +105,7 @@ def settings_getter(settings_array):
         if PRINT_LOOP_FREQUENCY: fp.tick()
 
         # do a get request to the server
-        url = 'http://ledvis.local:5000/get_settings'
+        url = 'http://localhost:5000/get_settings'
 
         try:
             response = requests.get(url)
