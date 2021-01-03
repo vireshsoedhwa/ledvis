@@ -327,7 +327,9 @@ class SamMode(VisualizerBase):
         b[:half_way] = indices
         b[-half_way:] = np.flipud(indices)
 
-        color_array[:,2] = (np.sin(b) + 1) * 50.
+        color_array[:,0] = (np.sin(b) + 1) * 100 # green
+        color_array[:,1] = (np.sin(b) + 1) * 0    # red	
+        color_array[:,2] = (np.sin(b) + 1) * 0   # blue
 
         return color_array
 
@@ -608,6 +610,8 @@ vis_list = [StripsOff,
             Blocks,
             FFT,
             Sparkle,
+            Retro,
+	        SamMode,
             Pancakes,
             Stones,
             VooMeter,
