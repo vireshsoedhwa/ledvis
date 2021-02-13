@@ -20,6 +20,7 @@ sudo apt install scons swig
 cd rpi_ws281x
 scons
 cd python
+sudo apt-get install python-dev
 sudo -H python setup.py build
 sudo -H python setup.py install
 ```
